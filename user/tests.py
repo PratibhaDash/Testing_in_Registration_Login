@@ -122,8 +122,6 @@ class Logouttest(TestCase):
         response=self.client.get(reverse(Logoutpage))
         self.assertEqual(response.status_code,200)
         
-        
-# This is project
 
 class Testurls(TestCase):
     #You can test if a URL can be resolved to a view function or not
