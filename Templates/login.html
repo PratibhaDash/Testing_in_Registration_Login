@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <from action="" method="POST">
+        {% csrf_token %}
+        <h3>Login here</h3>
+
+    <li><label for="email">Email</label>
+        <input type="email" placeholder="Email" name="email" id="email">
+    </li>
+
+    <li>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" name="password" id="password">
+    </li>
+
+    <li><button type="Submit">create an account</button></li>
+
+        <a href="{% url 'logout' %}" >Logout</a>
+    </from>
+</body>
+</html>
